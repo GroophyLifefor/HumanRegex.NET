@@ -23,6 +23,12 @@ namespace HumanRegex.NET
             return regexBuilder;
         }
 
+        public static RegexBuilder AppendRegexBuilder(this RegexBuilder regexBuilder, RegexBuilder appendRegexBuilder)
+        {
+            regexBuilder.AppendRule(appendRegexBuilder.ToRegex());
+            return regexBuilder;
+        }
+
         /// <summary>
         /// Exacly find a text.
         /// </summary>
