@@ -28,6 +28,7 @@ namespace HumanRegex.NET
             regexBuilder.AppendRule(appendRegexBuilder.ToRegex());
             return regexBuilder;
         }
+		
 
         /// <summary>
         /// Exacly find a text.
